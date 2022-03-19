@@ -1,1 +1,3 @@
-# noncifregherete-game
+# Repository Gioco NonCiFregheRete
+## Organizzazione Directory
+
