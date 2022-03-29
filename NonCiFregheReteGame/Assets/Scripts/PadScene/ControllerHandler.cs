@@ -1,14 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystem;
 
 public class ControllerHandler : MonoBehaviour
 {
     [SerializeField]
-    private string ip_address;
-
-    void move_forward()
-    {
-
-    }
+    private string ipAddress;
 }
