@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Networking;
 
 public class ControllerHandler : MonoBehaviour
 {
-    [SerializeField]
-    private string ipAddress = "http://<ip>/?State=";
+    private string ipAddress = "http://192.168.4.1/?State=";
 
     IEnumerator GetRequest(string uri)
     {
@@ -17,25 +17,45 @@ public class ControllerHandler : MonoBehaviour
         {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
+            string[] pages = uri.Split('/');
+            int page = pages.Length - 1;
+
+            switch (webRequest.result)
+            {
+                case UnityWebRequest.Result.ConnectionError:
+                case UnityWebRequest.Result.DataProcessingError:
+                    Debug.LogError(pages[page] + ": Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.ProtocolError:
+                    Debug.LogError(pages[page] + ": HTTP Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.Success:
+                    Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
+                    break;
+            }
         }
     }
 
     public void move()
     {
         string btn = EventSystem.current.name;
-
         switch (btn)
         {
             case "forwardButton":
-                GetRequest(ipAddress + "A");break;
+                StartCoroutine(GetRequest("http://192.168.4.1/?State=A"));
+                break;
             case "backwardButton":
-                GetRequest(ipAddress + "I"); break;
+                StartCoroutine(GetRequest("http://192.168.4.1/?State=I"));
+                break;
             case "leftButton":
-                GetRequest(ipAddress + "S"); break;
+                StartCoroutine(GetRequest("http://192.168.4.1/?State=I"));
+                break;
             case "rightButton":
-                GetRequest(ipAddress + "D"); break;
+                StartCoroutine(GetRequest("http://192.168.4.1/?State=I"));
+                break;
         }
-        Debug.Log(btn);
+        Thread.Sleep(500); //Working time
+        StartCoroutine(GetRequest("http://192.168.4.1/?State=Ferma"));
     }
 
 }
