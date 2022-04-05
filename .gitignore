@@ -60,5 +60,5 @@ crashlytics-build.properties
 
 # Trash
 *.log
-NonCiFregheReteGame/Library/ArtifactDB-lock
-NonCiFregheReteGame/Library/ArtifactDB
+/NonCiFregheReteGame/Library/ArtifactDB-lock
+/NonCiFregheReteGame/Library/ArtifactDB
