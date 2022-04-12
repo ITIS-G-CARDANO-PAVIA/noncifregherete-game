@@ -26,9 +26,4 @@ public class JSONManager: MonoBehaviour
         listDialoghi = JsonUtility.FromJson<ListDialoghi>(dialoghi.text);
         return listDialoghi;
     }
-
-        /* How-To
-        ListDialoghi piero = readDialogs();
-        Debug.Log(piero.dialogo[0].paragraphs[0]);
-        */
 }
