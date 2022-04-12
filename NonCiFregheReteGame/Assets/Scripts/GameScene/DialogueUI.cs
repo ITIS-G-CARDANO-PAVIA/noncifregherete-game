@@ -1,32 +1,43 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class DialogueUI : MonoBehaviour
 {
-    int playerPosition = 1;
+    [SerializeField] private GameObject dialogueBox;
+    [SerializeField] private TMP_Text textLabel;
+    [SerializeField] private DialogueObject testDialogue;
 
-    [SerializeField]
-    private TMP_Text textd;
-    // Start is called before the first frame update
-    void Start()
+    private TypeWriterEffect typeWriterEffect;
+
+    private void Start()
     {
-        textd.text = "Pronto per giocare? Premi A";
+        typeWriterEffect = GetComponent<TypeWriterEffect>();
+        ShowDialogue(testDialogue);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ShowDialogue(DialogueObject dialogueObject)
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        dialogueBox.SetActive(true);
+        StartCoroutine(StepThroughDialogue(dialogueObject));
+    }
+
+    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
+    {
+        // yield return new WaitForSeconds(3);
+
+        foreach (string dialogue in dialogueObject.GetDialogue())
         {
-            switch (playerPosition)
-            {
-                case 1: textd.text = "Provola 1";break;
-                case 2: textd.text = "Provola 2";break;
-                default: playerPosition = 0;break;
-            }
-            playerPosition++;
-        }   
+            yield return typeWriterEffect.Run(dialogue, textLabel);
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));  // mettere il touch
+        }
+
+        CloseDialogueBox();
+    } 
+
+    private void CloseDialogueBox()
+    {
+        dialogueBox.SetActive(false);
+        textLabel.text = string.Empty;
     }
 }

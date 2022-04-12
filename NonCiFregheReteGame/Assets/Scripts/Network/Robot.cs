@@ -18,7 +18,7 @@ public class Robot
         if(value != currentState)
         {
             currentState = value;
-            yield return network.GetRequest("state", value.ToString());
+            yield return network.GetRequest("State", value.ToString());
         }
     }
 
