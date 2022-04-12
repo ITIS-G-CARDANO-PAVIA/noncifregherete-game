@@ -39,17 +39,4 @@ public class JSONManager: MonoBehaviour
         listDialoghi = JsonUtility.FromJson<ListDialoghi>(dialoghi.text);
         return listDialoghi;
     }
-
-
-    public ListQuiz readQuizz(TextAsset quizz)
-    {
-        ListQuiz listQuiz = new ListQuiz();
-        listQuiz = JsonUtility.FromJson<ListQuiz>(quizz.text);
-        return listQuiz;
-    }
-
-        /* How-To
-        ListDialoghi piero = readDialogs();
-        Debug.Log(piero.dialogo[0].paragraphs[0]);
-        */
 }

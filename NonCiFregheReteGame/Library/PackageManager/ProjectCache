@@ -5,27 +5,27 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637835572580000000
-    m_Hash: 2839277801
+      ticks: 637853689360000000
+    m_Hash: 2908489063
   m_LockFileStatus:
     m_FilePath: /Users/thet3o/Documents/GitHub/noncifregherete-game/NonCiFregheReteGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637835572580000000
-    m_Hash: 3924135083
+      ticks: 637853689360000000
+    m_Hash: 2247858674
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
-    - packageId: com.unity.cinemachine@2.6.11
+    - packageId: com.unity.cinemachine@2.8.3
       testable: 0
       isDirectDependency: 1
-      version: 2.6.11
+      version: 2.8.3
       source: 1
-      resolvedPath: /Users/thet3o/Documents/GitHub/noncifregherete-game/NonCiFregheReteGame/Library/PackageCache/com.unity.cinemachine@2.6.11
+      resolvedPath: /Users/thet3o/Documents/GitHub/noncifregherete-game/NonCiFregheReteGame/Library/PackageCache/com.unity.cinemachine@2.8.3
       assetPath: Packages/com.unity.cinemachine
       name: com.unity.cinemachine
       displayName: Cinemachine
@@ -35,10 +35,11 @@ m_PackageAssets:
         url: 
       category: cinematography
       type: 
-      description: "Smart camera tools for passionate creators. \n\nIMPORTANT NOTE:
-        If you are upgrading from the Asset Store version of Cinemachine, delete
-        the Cinemachine asset from your project BEFORE installing this version from
-        the Package Manager."
+      description: "Smart camera tools for passionate creators. \n\nNew starting
+        from 2.7.1: Are you looking for the Cinemachine menu? It has moved to the
+        GameObject menu.\n\nIMPORTANT NOTE: If you are upgrading from the legacy
+        Asset Store version of Cinemachine, delete the Cinemachine asset from your
+        project BEFORE installing this version from the Package Manager."
       status: 4
       errors: []
       versions:
@@ -171,13 +172,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637715450880000000
+      datePublishedTicks: 637738074220000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
-        revision: 0eef4802dbe9ea60fc58767471ce4c5ea86632de
+        revision: dc21b29a59831e9c37412784e2069958c3248617
         path: 
     - packageId: com.unity.collab-proxy@1.15.12
       testable: 0
@@ -310,12 +311,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
         revision: 5ca1fd4ca9f999e087d19e98afaf99905a582771
         path: 
-    - packageId: com.unity.ide.rider@2.0.7
+    - packageId: com.unity.ide.rider@3.0.9
       testable: 0
       isDirectDependency: 1
-      version: 2.0.7
+      version: 3.0.9
       source: 1
-      resolvedPath: /Users/thet3o/Documents/GitHub/noncifregherete-game/NonCiFregheReteGame/Library/PackageCache/com.unity.ide.rider@2.0.7
+      resolvedPath: /Users/thet3o/Documents/GitHub/noncifregherete-game/NonCiFregheReteGame/Library/PackageCache/com.unity.ide.rider@3.0.9
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -391,17 +392,11 @@ m_PackageAssets:
         - 3.0.12
         verified: 2.0.7
       dependencies:
-      - name: com.unity.test-framework
-        version: 1.1.1
-      resolvedDependencies:
-      - name: com.unity.test-framework
-        version: 1.1.29
       - name: com.unity.ext.nunit
         version: 1.0.6
-      - name: com.unity.modules.imgui
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
+      resolvedDependencies:
+      - name: com.unity.ext.nunit
+        version: 1.0.6
       keywords: []
       registry:
         id: main
@@ -415,13 +410,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637334461080000000
+      datePublishedTicks: 637762012950000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-        revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
+        revision: bbc029723f4d157f759dba0f2d438dfcec2e73eb
         path: 
     - packageId: com.unity.ide.visualstudio@2.0.14
       testable: 0
@@ -852,12 +847,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
         revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
         path: 
-    - packageId: com.unity.timeline@1.4.8
+    - packageId: com.unity.timeline@1.6.3
       testable: 0
       isDirectDependency: 1
-      version: 1.4.8
+      version: 1.6.3
       source: 1
-      resolvedPath: /Users/thet3o/Documents/GitHub/noncifregherete-game/NonCiFregheReteGame/Library/PackageCache/com.unity.timeline@1.4.8
+      resolvedPath: /Users/thet3o/Documents/GitHub/noncifregherete-game/NonCiFregheReteGame/Library/PackageCache/com.unity.timeline@1.6.3
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -1010,13 +1005,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637557616100000000
+      datePublishedTicks: 637703491050000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-        revision: 527e4364e28028f20f04fc51db671eb4bb910a26
+        revision: 527d3ba73eae5d77407d8300c31dd62770a7409f
         path: 
     - packageId: com.unity.ugui@1.0.0
       testable: 0
