@@ -4,11 +4,8 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class JSONManager : MonoBehaviour
+public class JSONManager: MonoBehaviour
 {
-    [SerializeField]
-    public TextAsset textJSON;
-
     [Serializable]
     public class Dialogo
     {
@@ -23,18 +20,15 @@ public class JSONManager : MonoBehaviour
         public Dialogo[] dialogo;
     }
 
-    public ListDialoghi listDialoghi = new ListDialoghi();
-
-    void Start()
+    public ListDialoghi readDialogs(TextAsset dialoghi)
     {
-
-        listDialoghi = JsonUtility.FromJson<ListDialoghi>(textJSON.text);
-
+        ListDialoghi listDialoghi = new ListDialoghi();
+        listDialoghi = JsonUtility.FromJson<ListDialoghi>(dialoghi.text);
+        return listDialoghi;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        /* How-To
+        ListDialoghi piero = readDialogs();
+        Debug.Log(piero.dialogo[0].paragraphs[0]);
+        */
 }
