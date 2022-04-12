@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -40,48 +39,11 @@ public class JSONManager: MonoBehaviour
         listDialoghi = JsonUtility.FromJson<ListDialoghi>(dialoghi.text);
         return listDialoghi;
     }
-}
-=======
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using UnityEngine;
 
-public class JSONManager: MonoBehaviour
-{
-    [Serializable]
-    public class Dialogo
+    public ListQuiz readQuizz(TextAsset quizz)
     {
-        public string title;
-        public string[] paragraphs;
-    }
-
-    [Serializable]
-    public class Quiz
-    {
-        public string toAsk;
-        public string trueResponse;
-        public string[] falseResponse;
-    }
-
-    [Serializable]
-    public class ListDialoghi
-    {
-        public Dialogo[] dialogo;
-    }
-
-    [Serializable]
-    public class ListQuiz
-    {
-        public Quiz[] quiz;
-    }
-
-    public ListDialoghi readDialogs(TextAsset dialoghi)
-    {
-        ListDialoghi listDialoghi = new ListDialoghi();
-        listDialoghi = JsonUtility.FromJson<ListDialoghi>(dialoghi.text);
-        return listDialoghi;
+        ListQuiz listQuizz = new ListQuiz();
+        listQuizz = JsonUtility.FromJson<ListQuiz>(quizz.text);
+        return listQuizz;
     }
 }
->>>>>>> 6473b7f7ed8deaee2ca1198f10071e56f98a85db
