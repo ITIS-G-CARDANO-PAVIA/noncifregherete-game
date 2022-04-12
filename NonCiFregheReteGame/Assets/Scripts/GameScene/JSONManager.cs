@@ -9,9 +9,16 @@ public class JSONManager: MonoBehaviour
     [Serializable]
     public class Dialogo
     {
-        public int id;
         public string title;
         public string[] paragraphs;
+    }
+
+    [Serializable]
+    public class Quiz
+    {
+        public string toAsk;
+        public string trueResponse;
+        public string[] falseResponse;
     }
 
     [Serializable]
@@ -20,11 +27,25 @@ public class JSONManager: MonoBehaviour
         public Dialogo[] dialogo;
     }
 
+    [Serializable]
+    public class ListQuiz
+    {
+        public Quiz[] quiz;
+    }
+
     public ListDialoghi readDialogs(TextAsset dialoghi)
     {
         ListDialoghi listDialoghi = new ListDialoghi();
         listDialoghi = JsonUtility.FromJson<ListDialoghi>(dialoghi.text);
         return listDialoghi;
+    }
+
+
+    public ListQuiz readQuizz(TextAsset quizz)
+    {
+        ListQuiz listQuiz = new ListQuiz();
+        listQuiz = JsonUtility.FromJson<ListQuiz>(quizz.text);
+        return listQuiz;
     }
 
         /* How-To
