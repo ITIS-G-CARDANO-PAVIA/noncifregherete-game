@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObstaclesController : MonoBehaviour
 {
-    Network net = new Network("192.168.0.104");
+    Network net = new Network("192.168.0.112");
 
     public void f90()
     {
