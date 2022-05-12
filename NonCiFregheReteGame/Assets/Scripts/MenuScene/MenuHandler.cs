@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuHandler : MonoBehaviour
 {
+
     public void PlayGame()
     {
-        SceneManager.LoadScene(sceneName: "GameScene");
+        SceneManager.LoadScene(sceneName: "QuizScene");
     }
 }

@@ -6,15 +6,19 @@ using UnityEngine;
 
 public class JSONManager : MonoBehaviour
 {
-    [SerializeField]
-    public TextAsset textJSON;
-
     [Serializable]
     public class Dialogo
     {
-        public int id;
         public string title;
         public string[] paragraphs;
+    }
+
+    [Serializable]
+    public class Quiz
+    {
+        public string toAsk;
+        public string trueResponse;
+        public string[] falseResponse;
     }
 
     [Serializable]
@@ -23,18 +27,23 @@ public class JSONManager : MonoBehaviour
         public Dialogo[] dialogo;
     }
 
-    public ListDialoghi listDialoghi = new ListDialoghi();
-
-    void Start()
+    [Serializable]
+    public class ListQuiz
     {
-
-        listDialoghi = JsonUtility.FromJson<ListDialoghi>(textJSON.text);
-
+        public Quiz[] quiz;
     }
 
-    // Update is called once per frame
-    void Update()
+    public ListDialoghi readDialogs(TextAsset dialoghi)
     {
-        
+        ListDialoghi listDialoghi = new ListDialoghi();
+        listDialoghi = JsonUtility.FromJson<ListDialoghi>(dialoghi.text);
+        return listDialoghi;
+    }
+
+    public ListQuiz readQuiz(TextAsset quiz)
+    {
+        ListQuiz listQuiz = new ListQuiz();
+        listQuiz = JsonUtility.FromJson<ListQuiz>(quiz.text);
+        return listQuiz;
     }
 }
