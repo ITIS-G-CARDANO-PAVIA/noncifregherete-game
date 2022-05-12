@@ -1,12 +1,21 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class mainMenuScript : MonoBehaviour
 {
-    
-    public void playGame(){
+    //Finale 110, 111, 112
+
+    [SerializeField]
+    private InputField inp;
+    public static string ipAddress;
+
+    public void playGame() { 
+        ipAddress = inp.ToString();
+        Network net = new Network(ipAddress);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
     }
     
