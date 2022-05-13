@@ -1,0 +1,21 @@
+{
+    "quiz": [
+        {
+            "toAsk": "Come mi chiamo?",
+            "trueResponse": "Piero",
+            "falseResponse": [
+                "Mona",
+                "Pierotoldo"
+            ]
+        },
+        {
+            "toAsk": "Come va?",
+            "trueResponse": "Male",
+            "falseResponse": [
+                "Che Palle",
+                "Ciao"
+            ]
+        }
+    ]
+
+}

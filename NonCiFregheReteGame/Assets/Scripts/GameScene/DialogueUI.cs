@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using TMPro;
 
@@ -6,38 +6,48 @@ public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
-    [SerializeField] private DialogueObject testDialogue;
+    [SerializeField] private TextAsset textAsset;
 
     private TypeWriterEffect typeWriterEffect;
 
     private void Start()
     {
         typeWriterEffect = GetComponent<TypeWriterEffect>();
-        ShowDialogue(testDialogue);
+        JSONManager jm = new JSONManager();
+        JSONManager.ListDialoghi dialoghi = jm.readDialogs(textAsset);
+        
+        ShowDialogue(dialoghi.dialogo);
     }
-
-    public void ShowDialogue(DialogueObject dialogueObject)
+    
+    public void ShowDialogue(JSONManager.Dialogo[] dialogue)
     {
         dialogueBox.SetActive(true);
-        StartCoroutine(StepThroughDialogue(dialogueObject));
+        StartCoroutine(StepThroughDialogue(dialogue));
     }
 
-    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
+    private IEnumerator StepThroughDialogue(JSONManager.Dialogo[] dialogue)
     {
-        // yield return new WaitForSeconds(3);
-
-        foreach (string dialogue in dialogueObject.GetDialogue())
+        for (int i = 0; i < dialogue.Length; i++)
         {
-            yield return typeWriterEffect.Run(dialogue, textLabel);
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));  // mettere il touch
-        }
+            SetStatusDialogueBox(true);
+            string[] dialogueArray = dialogue[i].paragraphs;
 
-        CloseDialogueBox();
+            foreach (string text in dialogueArray)
+            {
+                yield return typeWriterEffect.Run(text, textLabel);
+                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));  // mettere il touch
+            }
+            SetStatusDialogueBox(false);
+            
+            /* Apettare tra la chiusura del Box e l'apertura di un altro Box
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.J));
+            */
+        }
     } 
 
-    private void CloseDialogueBox()
+    private void SetStatusDialogueBox(bool status)
     {
-        dialogueBox.SetActive(false);
+        dialogueBox.SetActive(status);
         textLabel.text = string.Empty;
     }
 }

@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class JSONManager : MonoBehaviour
+public class JSONManager: MonoBehaviour
 {
     [Serializable]
     public class Dialogo
@@ -40,10 +40,10 @@ public class JSONManager : MonoBehaviour
         return listDialoghi;
     }
 
-    public ListQuiz readQuiz(TextAsset quiz)
+    public ListQuiz readQuizz(TextAsset quizz)
     {
-        ListQuiz listQuiz = new ListQuiz();
-        listQuiz = JsonUtility.FromJson<ListQuiz>(quiz.text);
-        return listQuiz;
+        ListQuiz listQuizz = new ListQuiz();
+        listQuizz = JsonUtility.FromJson<ListQuiz>(quizz.text);
+        return listQuizz;
     }
 }
