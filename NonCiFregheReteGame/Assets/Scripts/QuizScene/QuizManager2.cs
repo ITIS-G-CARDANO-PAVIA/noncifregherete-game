@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class QuizManager2 : MonoBehaviour
 {
+    public static bool toReactivate = false;
     public TextAsset quizJSON;
     public TextMeshProUGUI question;
     public Button[] answerButtons = new Button[3];
     public int currentQuizIdx;
+    public int correctResponse = 0;
     private JSONManager.Quiz[] quiz;
     private int correctAnswerIdx;
 
@@ -62,7 +65,18 @@ public class QuizManager2 : MonoBehaviour
     public void correct()
     {
         Debug.Log("Correct");
-        this.showQuiz(this.currentQuizIdx+1);
+        if(correctResponse == 4)
+        {
+            correctResponse = 0;
+            SceneManager.LoadScene(4);
+        }
+        else
+        {
+            correctResponse++;
+            this.showQuiz(this.currentQuizIdx + 1);
+        }
+        
+        
     }
 
     // Update is called once per frame

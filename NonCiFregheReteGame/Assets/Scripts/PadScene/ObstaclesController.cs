@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObstaclesController : MonoBehaviour
 {
@@ -22,6 +23,16 @@ public class ObstaclesController : MonoBehaviour
         StartCoroutine(net.GetRequest("ip"+ipadd));
     }
 
+    public void goBack()
+    {
+        QuizManager2.toReactivate = true;
+        SceneManager.LoadScene(2);
+    }
+
+    public void unlockTheTrack()
+    {
+
+    }
 
     //Sblocco robot StartCoroutine(net.GetRequest("State", "Sbloccato"));
 
