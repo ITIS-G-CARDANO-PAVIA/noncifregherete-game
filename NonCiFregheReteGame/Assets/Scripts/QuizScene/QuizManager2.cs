@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,57 +6,63 @@ using UnityEngine.SceneManagement;
 
 public class QuizManager2 : MonoBehaviour
 {
+    [SerializeField]
+    private int minForPad = 2;
+
     public static bool toReactivate = false;
     public TextAsset quizJSON;
     public TextMeshProUGUI question;
     public Button[] answerButtons = new Button[3];
-    public int currentQuizIdx;
-    public int correctResponse = 0;
+    public static int currentQuizIdx = 0;
+    private int correctResponse = 0;
     private JSONManager.Quiz[] quiz;
-    private int correctAnswerIdx;
 
-    // Start is called before the first frame update
+    private static List<int> alreadyAsked = new List<int>();
+
     void Start()
     {
-        this.currentQuizIdx = 0;
         JSONManager json = new JSONManager();
-        this.quiz = json.readQuizz(this.quizJSON).quiz;
-        this.currentQuizIdx = 0;
-        this.showQuiz();
+        quiz = json.readQuizz(quizJSON).quiz;
+        showQuiz();
     }
 
-    void showQuiz(int currentIdx)
+    int indexToAsk()
     {
-        this.currentQuizIdx = currentIdx;
-        this.showQuiz();
+
+        int rdm;
+        do
+        {
+            rdm = Random.Range(0, quiz.Length);
+        } while (alreadyAsked.Contains(rdm));
+        alreadyAsked.Add(rdm);
+        return rdm;
     }
 
     void showQuiz()
     {
-        JSONManager.Quiz currentQuiz = this.quiz[this.currentQuizIdx];
-        this.question.text = currentQuiz.toAsk;
+        JSONManager.Quiz currentQuiz = quiz[indexToAsk()];
+        question.text = currentQuiz.toAsk;
         List<string> answers = new List<string>();
         answers.AddRange(currentQuiz.falseResponse);
         answers.Add(currentQuiz.trueResponse);
-        foreach(Button button in this.answerButtons)
+        foreach(Button button in answerButtons)
         {
             int i = Random.Range(0, answers.Count);
             button.GetComponentInChildren<TextMeshProUGUI>().text = answers[i];
             button.onClick.RemoveAllListeners();
             if(answers[i] == currentQuiz.trueResponse)
             {
-                correctAnswerIdx = i;
-                button.onClick.AddListener(this.correct);
+                button.onClick.AddListener(correct);
             }
             else
             {
-                button.onClick.AddListener(this.wrowg);
+                button.onClick.AddListener(wrong);
             }
             answers.RemoveAt(i);
         }
     }
 
-    public void wrowg()
+    public void wrong()
     {
         Debug.Log("Wrong");
     }
@@ -65,23 +70,18 @@ public class QuizManager2 : MonoBehaviour
     public void correct()
     {
         Debug.Log("Correct");
-        if(correctResponse == 4)
+        if(correctResponse == (minForPad-1))
         {
             correctResponse = 0;
+            showQuiz();
             SceneManager.LoadScene(4);
         }
         else
         {
             correctResponse++;
-            this.showQuiz(this.currentQuizIdx + 1);
+            showQuiz();
         }
         
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 }

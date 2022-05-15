@@ -8,6 +8,6 @@ public class MenuHandler : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(sceneName: "QuizScene");
+        SceneManager.LoadScene(sceneName: "GameScene");
     }
 }

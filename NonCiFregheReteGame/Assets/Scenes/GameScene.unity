@@ -651,7 +651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1071669487}
   textLabel: {fileID: 1932158861}
-  textAsset: {fileID: 4900000, guid: a811594f8827643d2a5abcddcca5cacd, type: 3}
+  textAsset: {fileID: 4900000, guid: 9400b7d1030a649c6bfea0b6f6e990a6, type: 3}
 --- !u!114 &214226487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,13 +759,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d57f481ad75b7df409303f99f672609d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quizJSON: {fileID: 4900000, guid: b99b24d9f023a394aaf41f539264b105, type: 3}
+  minForPad: 2
+  quizJSON: {fileID: 4900000, guid: ec8186d172072439f8a2f1bf0f19f6a0, type: 3}
   question: {fileID: 1653602098}
   answerButtons:
   - {fileID: 274847059}
   - {fileID: 943263214}
   - {fileID: 303957238}
   currentQuizIdx: 0
+  correctResponse: 0
 --- !u!1 &268480518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,6 +1513,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &694638664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694638666}
+  - component: {fileID: 694638665}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &694638665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694638664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8013649cfa0bd41af97fbce0c8581661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 1071669487}
+  quizUI: {fileID: 1344858431}
+--- !u!4 &694638666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694638664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 493.39832, y: 117.12923, z: 60.954132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &726447593
 GameObject:
   m_ObjectHideFlags: 0

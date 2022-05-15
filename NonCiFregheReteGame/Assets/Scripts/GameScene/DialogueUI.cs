@@ -37,6 +37,7 @@ public class DialogueUI : MonoBehaviour
                 yield return typeWriterEffect.Run(text, textLabel);
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));  // mettere il touch
             }
+            GameManager.isQuizEnabled = true;
             SetStatusDialogueBox(false);
             
             /* Apettare tra la chiusura del Box e l'apertura di un altro Box

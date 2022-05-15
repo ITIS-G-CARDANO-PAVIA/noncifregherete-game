@@ -27,7 +27,7 @@ public class QuizManager : MonoBehaviour
 
     public void trueResponse()
     {
-        SceneManager.LoadScene("PadScene", LoadSceneMode.Single);
+        SceneManager.LoadScene(4);
     }
 
     private IEnumerator StepThroughDialogue(JSONManager.Dialogo[] dialogue)
