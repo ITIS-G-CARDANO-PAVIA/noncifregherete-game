@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     private GameObject quizUI;
 
     public static bool isQuizEnabled = true;
+    public static bool gateUnlocked = false;
+    public static bool bridgeUnlocked = false;
+    public static bool robotUnlocked = false;
 
     void checkQuiz()
     {

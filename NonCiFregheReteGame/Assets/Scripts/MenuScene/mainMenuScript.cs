@@ -10,8 +10,9 @@ public class mainMenuScript : MonoBehaviour
     public static string ipAddressRobot = "192.168.0.110";
 
     public void playGame() {
-        Network net = new Network("192.168.0.113");
-        StartCoroutine(net.GetRequest("ip" + ipAddressRobot));
+        //Network net = new Network("192.168.0.113");
+        //StartCoroutine(net.GetRequest("ip" + ipAddressRobot));
+        GameManager.isQuizEnabled = false;
         SceneManager.LoadScene(1); 
     }
 

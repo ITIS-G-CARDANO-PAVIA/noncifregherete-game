@@ -23,6 +23,7 @@ public class DialogueUI : MonoBehaviour
     public void ShowDialogue(JSONManager.Dialogo[] dialogue)
     {
         dialogueBox.SetActive(true);
+        print(dialogue.Length);
         StartCoroutine(StepThroughDialogue(dialogue));
     }
 
@@ -37,13 +38,13 @@ public class DialogueUI : MonoBehaviour
             {
                 yield return typeWriterEffect.Run(text, textLabel);
                 //yield return new WaitUntil(() => (Input.touchCount > 0));
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) || (Input.touchCount > 0));
                 audioSource.Play();
             }
-            GameManager.isQuizEnabled = true;
             SetStatusDialogueBox(false);
             
         }
+        GameManager.isQuizEnabled = true;
     } 
 
     private void SetStatusDialogueBox(bool status)

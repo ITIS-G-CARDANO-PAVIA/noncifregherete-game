@@ -18,15 +18,21 @@ public class QuizManager2 : MonoBehaviour
     private JSONManager.Quiz[] quiz;
     public AudioSource wrongAudio;
     public AudioSource correctAudio;
-
     public Animator robotAnimator;
 
     private static List<int> alreadyAsked = new List<int>();
+    /*
+        111 = gate
+        112 = jammer
+        113 = bridge
+     */
+    public static int obstaclesRequested = 000;
 
     void Start()
     {
         JSONManager json = new JSONManager();
         quiz = json.readQuizz(quizJSON).quiz;
+        correctResponse = 0;
         showQuiz();
     }
 
@@ -70,18 +76,39 @@ public class QuizManager2 : MonoBehaviour
     {
         Debug.Log("Wrong");
         wrongAudio.Play();
-        robotAnimator.SetInteger("State", 2);
-
+        robotAnimator.Play("SBAGLIATA");
     }
 
     public void correct()
     {
         Debug.Log("Correct");
         correctAudio.Play();
-        if(correctResponse == (minForPad-1))
+        robotAnimator.Play("GIUSTA");
+        robotAnimator.Play("SPIEGAZIONE");
+        if (correctResponse == (minForPad-1))
         {
             correctResponse = 0;
-            showQuiz();
+            //showQuiz();
+            switch (obstaclesRequested)
+            {
+                case 111:
+                    {
+                        GameManager.gateUnlocked = true;
+                        break;
+                    }
+                case 112:
+                    {
+                        GameManager.robotUnlocked = true;
+                        break;
+                    }
+                case 113:
+                    {
+                        GameManager.bridgeUnlocked = true;
+                        break;
+                    }
+                default:
+                    Debug.Log("No obstacles");break;
+            }
             SceneManager.LoadScene(4);
         }
         else
