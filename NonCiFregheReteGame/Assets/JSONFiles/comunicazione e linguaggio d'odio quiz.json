@@ -1,0 +1,44 @@
+{
+	"quiz": [
+		{
+			"toAsk": "L’odio può essere giustificato?",
+			"trueResponse": "no",
+			"falseResponse":[
+				"si",
+				"solo in alcuni casi",
+			]
+		}
+		{
+			"toAsk": "  È più grave controargomentare o criticare il tono?",
+			"trueResponse": "criticare il tono",
+			"falseResponse":[
+				"controargomentare",
+				"entrambi",
+			]
+		}
+		{
+			"toAsk": "  Cosa faresti se uno sconosciuto si arrabbiasse con te?",
+			"trueResponse": "cercherei di calmare lo sconosciuto",
+			"falseResponse":[
+				"  mi arrabbierei anch’io e lo insulterei",
+				"scapperei per la paura",
+			]
+		}
+		{
+			"toAsk": " Qual è il significato dell’espressione “ad hominem”?",
+			"trueResponse": " attaccare la persona che propone la tesi e non la tesi stessa",
+			"falseResponse":[
+				"insultare in modo pesante",
+				"picchiare",
+			]
+		}
+		{
+			"toAsk": " Completa la frase:……………… è contraddizione più ragionamento e/o prova ",
+			"trueResponse": "Controargomentare",
+			"falseResponse":[
+				"confutare",
+				"insultare",
+			]
+		}
+	]
+}

@@ -16,6 +16,10 @@ public class QuizManager2 : MonoBehaviour
     public static int currentQuizIdx = 0;
     private int correctResponse = 0;
     private JSONManager.Quiz[] quiz;
+    public AudioSource wrongAudio;
+    public AudioSource correctAudio;
+
+    public Animator robotAnimator;
 
     private static List<int> alreadyAsked = new List<int>();
 
@@ -65,11 +69,15 @@ public class QuizManager2 : MonoBehaviour
     public void wrong()
     {
         Debug.Log("Wrong");
+        wrongAudio.Play();
+        robotAnimator.SetInteger("State", 2);
+
     }
 
     public void correct()
     {
         Debug.Log("Correct");
+        correctAudio.Play();
         if(correctResponse == (minForPad-1))
         {
             correctResponse = 0;

@@ -31,12 +31,7 @@ public class JoystickHandler : MonoBehaviour, IDragHandler, IPointerDownHandler,
         {
             snapAngles[i] = halfSnapArea * 2 * i;
         }
-        robot = new Robot("127.0.0.1");
-    }
-
-    public void OnIpChange(String ip)
-    {
-        robot.setIpAddress(ip);
+        robot = new Robot("192.168.0.110");
     }
 
     public void OnPointerDown(PointerEventData eventData)

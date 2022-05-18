@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject quizUI;
 
-    [SerializeField]
     public static bool isQuizEnabled = true;
 
     void checkQuiz()

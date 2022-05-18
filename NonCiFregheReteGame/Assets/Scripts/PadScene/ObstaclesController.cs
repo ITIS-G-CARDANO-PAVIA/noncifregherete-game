@@ -1,26 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ObstaclesController : MonoBehaviour
 {
-    Network net = new Network("192.168.0.112");
-    private string ipadd = mainMenuScript.ipAddress;
+    
+    Network bridge = new Network("192.168.0.111");
+    Network gate = new Network("192.168.0.112");
+    Network robot = new Network(mainMenuScript.ipAddressRobot);
 
-    public void f90()
+    public void closeGate()
     {
-        StartCoroutine(net.GetRequest("P90&"));
+        StartCoroutine(gate.GetRequest("CW"));
     }
 
-    public void f180()
+    public void openGate()
     {
-        StartCoroutine(net.GetRequest("P180&"));
+        StartCoroutine(gate.GetRequest("CCW"));
     }
 
-    public void sendIp()
+    public void unlockRobot()
     {
-        StartCoroutine(net.GetRequest("ip"+ipadd));
+        StartCoroutine(robot.GetRequest("State", "Sbloccato"));
     }
 
     public void goBack()

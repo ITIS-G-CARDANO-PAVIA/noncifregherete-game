@@ -1,0 +1,92 @@
+{
+	"quiz": [
+		{
+			"toAsk": "Le fake news sono intenzionali?",
+			"trueResponse": "Si",
+			"falseResponse": [
+				"No",
+				"Sono casuali"
+			]
+		}
+		{
+			"toAsk": "Si creano le fake news per..:",
+			"trueResponse": "Pubblicità",
+			"falseResponse": [
+				"Per conoscere persone nuove",
+				"Nessuna delle risposte è corretta"
+			]
+		}
+		{
+			"toAsk": "Quali sono gli obiettivi di chi crea le fake news?",
+			"trueResponse": "Ricavare un profitto",
+			"falseResponse": [
+				"Nessuna delle risposte è corretta",
+				"Fare amicizia"
+			]
+		}
+		{
+			"toAsk": "Pubblicare delle fake news comporta prendersi delle responsabilità?",
+			"trueResponse": "Si",
+			"falseResponse": [
+				"No, ognuno è libero di condividere ciò che vuole",
+				"No, perchè ogni contenuto pubblicato online può essere eliminato"
+			]
+		}
+		{
+			"toAsk": "Cosa sono le ‘fonti equivoche’?",
+			"trueResponse": "Le fonti che cercano di duplicare una fonte reale",
+			"falseResponse": [
+				"Sono delle copie delle fonti reali per evitare attacchi alla rete",
+				"Le fonti che si creano allo scopo di guadagnare"
+			]
+		}
+		{
+			"toAsk": "Come funziona il ‘processo virale’?",
+			"trueResponse": "Una catena di condivisioni che portano la notizia ad ottenere una certa fama",
+			"falseResponse": [
+				"E’ quando una notizia riceve un insieme di segnalazione",
+				"Un processo legale in cui quelli che hanno condiviso la fake news vengono chiamati"
+			]
+		}
+		{
+			"toAsk": "Come avviene una reazione emotiva?",
+			"trueResponse": "Avviene quando una o più parti della notizia causano emozioni forti come gioia o rabbia",
+			"falseResponse":[
+				"Avviene se un lettore o l'ascoltatore trova particolarmente noiosa una notizia",
+				"Avviene quando la notizia causa delle emozioni forti e il lettore non la condivide"
+			]
+		}
+		{
+			"toAsk": "Come viene diffusa una fake news sui social?",
+			"trueResponse": "Una notizia viene diffusa grazie agli ‘elementi di invio’",
+			"falseResponse":[
+				"Una notizia viene diffusa unicamente grazie a i telegiornali",
+				"Nessuna delle risposte è corretta"
+			]
+		}
+		{
+			"toAsk": "Cosa può aiutarci a scoprire se una notizia è una fake news?",
+			"trueResponse": "Who, Where, When, Why, How",
+			"falseResponse":[
+				"Who, Where, When, What",
+				"Nessuna delle risposte è corretta."
+			]
+		}
+		{
+			"toAsk": "Quale azienda straniera si occupa di gestire siti italiani pieni di fake news?",
+			"trueResponse": "L’Edinet",
+			"falseResponse":[
+				"La repubblica",
+				"Il giornale della sera"
+			]
+		}
+		{
+			"toAsk": "Quali sono le leve a cui si fa forza per far sì che la gente credi alle fake news?",
+			"trueResponse": "L’ignoranza: Conoscere poco un determinato argomento",
+			"falseResponse":[
+				"La falsità: Il rendere ovvio che una notizia è falsa",
+				"Nessuna delle risposte è corretta"
+			]
+		}
+	]
+}

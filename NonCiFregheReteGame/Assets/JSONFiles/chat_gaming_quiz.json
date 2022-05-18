@@ -1,0 +1,92 @@
+{
+	"quiz": [
+		{
+			"toAsk": "Ci sono diversi tipi di videogiochi, i più famosi sono..:",
+			"trueResponse": "RPG, shooter, MOBA",
+			"falseResponse": [
+				"RLG, bopper, MOBA",
+				"RPG, shooter, BOBA"
+			]
+		}
+		{
+			"toAsk": "Tra i diversi tipi dei videogiochi, ci sono gli Shooter: Qual è l’azione principale?",
+			"trueResponse": "La principale azione è sparare",
+			"falseResponse": [
+				"L'obiettivo è di scappare da una stanza chiusa",
+				"Nessuna delle risposte è corretta"
+			]
+		}
+		{
+			"toAsk": "Il gioco è importante per i bambini?",
+			"trueResponse": "Si",
+			"falseResponse": [
+				"No",
+				"No, perchè si diventa dipendenti"
+			]
+		}
+		{
+			"toAsk": "I videogiochi possono causare dei problemi? Fisici o mentali?",
+			"trueResponse": "Si, sia fisici che mentali",
+			"falseResponse": [
+				"Si, ma solo fisici",
+				"No, i videogiochi non causano alcun problema"
+			]
+		}
+		{
+			"toAsk": "I problemi del sonno possono essere causati dai videogiochi?",
+			"trueResponse": "Si",
+			"falseResponse": [
+				"No",
+				"Non tutti i videogiochi li causano"
+			]
+		}
+		{
+			"toAsk": "Alcuni dei problemi mentali che si possono riscontrare sono..:",
+			"trueResponse": "Allontanarsi dai propri amici(isolarsi) e voler giocare sempre di più(dipendenza)",
+			"falseResponse": [
+				"Voler giocare sempre di meno(dipendenza) e allontanarsi dai propri amici(isolarsi)",
+				"Nessuna delle risposte è corretta"
+			]
+		}
+		{
+			"toAsk": "Alcuni dei problemi fisici che si possono riscontrare sono..:",
+			"trueResponse": "Poca cura di sé stessi, problemi del sonno, problemi alla vista",
+			"falseResponse":[
+				"Nessuna delle risposte è corretta",
+				"Molta cura di sé stessi e buona vista"
+			]
+		}
+		{
+			"toAsk": "Chi sono i Consumer?",
+			"trueResponse": "Chi usa il prodotto",
+			"falseResponse":[
+				"Nessuna delle risposte è corretta",
+				"Chi crea il prodotto"
+			]
+		}
+		{
+			"toAsk": "Chi sono i Prosumer?",
+			"trueResponse": "Chi non solo usa il prodotto ma ne crea altri dello stesso tipo",
+			"falseResponse":[
+				"Nessuna delle risposte è corretta",
+				"Chi studia i problemi legati ai videogiochi"
+			]
+		}
+		{
+			"toAsk": "La dipendenza si può definire come:",
+			"trueResponse": "Voler sempre di più qualcosa",
+			"falseResponse":[
+				"Voler sempre di meno qualcosa",
+				"Nessuna delle risposte è corretta"
+			]
+		}
+		{
+			"toAsk": "Il gioco influisce sul carattere?",
+			"trueResponse": "Si",
+			"falseResponse":[
+				"No",
+				"No, solo sul fisico"
+			]
+		}
+	]
+}

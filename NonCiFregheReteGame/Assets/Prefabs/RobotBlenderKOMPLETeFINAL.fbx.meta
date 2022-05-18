@@ -1,11 +1,20 @@
 fileFormatVersion: 2
-guid: 11253c0955535458688a072e3edf816c
+guid: cbfca1e0c2f2441d1b0839f08f41cea0
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -623603649343465320
-    second: Scene
+    second: SPIEGAZIONE
+  - first:
+      74: -7404280151065832927
+    second: ATTENDERE
+  - first:
+      74: 5297204546905389792
+    second: SBAGLIATA
+  - first:
+      74: 739834842195667339
+    second: GIUSTA
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,11 +44,98 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Scene
+      name: SPIEGAZIONE
       takeName: Scene
       internalID: 0
       firstFrame: 1
-      lastFrame: 257
+      lastFrame: 242
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: ATTENDERE
+      takeName: Scene
+      internalID: 0
+      firstFrame: 242
+      lastFrame: 493
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: SBAGLIATA
+      takeName: Scene
+      internalID: 0
+      firstFrame: 242
+      lastFrame: 538
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: GIUSTA
+      takeName: Scene
+      internalID: 0
+      firstFrame: 538
+      lastFrame: 700
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

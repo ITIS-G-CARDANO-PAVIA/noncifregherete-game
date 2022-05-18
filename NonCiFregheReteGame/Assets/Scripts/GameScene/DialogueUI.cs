@@ -7,6 +7,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private TextAsset textAsset;
+    [SerializeField] private AudioSource audioSource;
 
     private TypeWriterEffect typeWriterEffect;
 
@@ -15,7 +16,7 @@ public class DialogueUI : MonoBehaviour
         typeWriterEffect = GetComponent<TypeWriterEffect>();
         JSONManager jm = new JSONManager();
         JSONManager.ListDialoghi dialoghi = jm.readDialogs(textAsset);
-        
+        audioSource.Play();
         ShowDialogue(dialoghi.dialogo);
     }
     
@@ -35,14 +36,13 @@ public class DialogueUI : MonoBehaviour
             foreach (string text in dialogueArray)
             {
                 yield return typeWriterEffect.Run(text, textLabel);
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));  // mettere il touch
+                //yield return new WaitUntil(() => (Input.touchCount > 0));
+                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+                audioSource.Play();
             }
             GameManager.isQuizEnabled = true;
             SetStatusDialogueBox(false);
             
-            /* Apettare tra la chiusura del Box e l'apertura di un altro Box
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.J));
-            */
         }
     } 
 
