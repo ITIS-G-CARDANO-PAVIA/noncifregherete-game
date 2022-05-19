@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject quizUI;
 
+    
+
     public static bool isQuizEnabled = true;
     public static bool gateUnlocked = false;
     public static bool bridgeUnlocked = false;
@@ -19,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     void checkQuiz()
     {
+
         if (!isQuizEnabled)
         {
             quizUI.SetActive(false);

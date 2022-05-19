@@ -6,9 +6,9 @@ public class ObstaclesController : MonoBehaviour
     public AudioSource win;
     public AudioSource gateAudio;
     
-    Network bridge = new Network("192.168.0.113");
+    Network bridge = new Network("192.168.0.112");
     Network gate = new Network("192.168.0.111");
-    Network jammer = new Network("192.168.0.112");
+    Network jammer = new Network("192.168.0.113");
     Network robot = new Network(mainMenuScript.ipAddressRobot);
 
     public void closeGate()
@@ -33,17 +33,17 @@ public class ObstaclesController : MonoBehaviour
 
     public void renableJammer()
     {
-        StartCoroutine(jammer.GetRequest("enable"));
+        StartCoroutine(jammer.GetRequest("j=enable&"));
     }
 
     public void openBridge()
     {
-        if(GameManager.bridgeUnlocked)
+        if(GameManager.bridgeUnlocked && GameManager.gateUnlocked)
         {
             gateAudio.Play();
             StartCoroutine(bridge.GetRequest("open"));
         }
-        else
+        else if(GameManager.gateUnlocked)
         {
             QuizManager2.obstaclesRequested = 113;
             GameManager.isQuizEnabled = true;
@@ -58,12 +58,12 @@ public class ObstaclesController : MonoBehaviour
 
     public void unlockRobot()
     {
-        if (GameManager.robotUnlocked)
+        if (GameManager.robotUnlocked && GameManager.bridgeUnlocked && GameManager.gateUnlocked)
         {
             win.Play();
             StartCoroutine(robot.GetRequest("State", "Sbloccato"));
         }
-        else
+        else if(GameManager.bridgeUnlocked && GameManager.gateUnlocked)
         {
             QuizManager2.obstaclesRequested = 112;
             GameManager.isQuizEnabled = true;

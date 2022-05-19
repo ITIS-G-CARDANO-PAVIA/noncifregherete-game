@@ -48,7 +48,7 @@ ModelImporter:
       takeName: Scene
       internalID: 0
       firstFrame: 1
-      lastFrame: 242
+      lastFrame: 143
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -105,7 +105,7 @@ ModelImporter:
       name: SBAGLIATA
       takeName: Scene
       internalID: 0
-      firstFrame: 242
+      firstFrame: 478
       lastFrame: 538
       wrapMode: 0
       orientationOffsetY: 0

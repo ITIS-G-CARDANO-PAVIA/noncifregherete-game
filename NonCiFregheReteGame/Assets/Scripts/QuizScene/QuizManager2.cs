@@ -50,6 +50,7 @@ public class QuizManager2 : MonoBehaviour
 
     void showQuiz()
     {
+        robotAnimator.Play("ATTENDERE");
         JSONManager.Quiz currentQuiz = quiz[indexToAsk()];
         question.text = currentQuiz.toAsk;
         List<string> answers = new List<string>();
@@ -84,7 +85,6 @@ public class QuizManager2 : MonoBehaviour
         Debug.Log("Correct");
         correctAudio.Play();
         robotAnimator.Play("GIUSTA");
-        robotAnimator.Play("SPIEGAZIONE");
         if (correctResponse == (minForPad-1))
         {
             correctResponse = 0;
