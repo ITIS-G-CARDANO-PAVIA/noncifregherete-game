@@ -13,11 +13,20 @@ public class GameManager : MonoBehaviour
     private GameObject quizUI;
 
     
-
+    //Quiz flag
     public static bool isQuizEnabled = true;
+
+    //Bypass dialogue
+    public static bool bypassDialogue = false;
+
+    //Obstacles flags
     public static bool gateUnlocked = false;
     public static bool bridgeUnlocked = false;
     public static bool robotUnlocked = false;
+
+    //Dialogue to show index and quiz range
+    public static int[] dialogueToShow = {0, 1};
+    public static int[] quizRange = {21, 30};
 
     void checkQuiz()
     {

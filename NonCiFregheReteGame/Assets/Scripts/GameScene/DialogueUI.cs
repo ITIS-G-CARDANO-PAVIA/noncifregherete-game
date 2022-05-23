@@ -29,7 +29,7 @@ public class DialogueUI : MonoBehaviour
 
     private IEnumerator StepThroughDialogue(JSONManager.Dialogo[] dialogue)
     {
-        for (int i = 0; i < dialogue.Length; i++)
+        for (int i = GameManager.dialogueToShow[0]; i < GameManager.dialogueToShow[1]; i++)
         {
             SetStatusDialogueBox(true);
             string[] dialogueArray = dialogue[i].paragraphs;

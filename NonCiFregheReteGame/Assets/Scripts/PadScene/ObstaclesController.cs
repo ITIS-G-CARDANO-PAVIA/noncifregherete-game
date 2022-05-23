@@ -25,8 +25,22 @@ public class ObstaclesController : MonoBehaviour
         }
         else
         {
+
+            if (GameManager.bypassDialogue)
+            {
+                GameManager.isQuizEnabled = true;
+                Debug.Log("Porca putena");
+            }
+            else
+            {
+                GameManager.isQuizEnabled = false;
+            }
+
             QuizManager2.obstaclesRequested = 111;
-            GameManager.isQuizEnabled = true;
+            GameManager.dialogueToShow[0] = 2;
+            GameManager.dialogueToShow[1] = 3;
+            GameManager.quizRange[0] = 0;
+            GameManager.quizRange[1] = 11;
             SceneManager.LoadScene(2);
         }
     }
@@ -41,19 +55,30 @@ public class ObstaclesController : MonoBehaviour
         if(GameManager.bridgeUnlocked && GameManager.gateUnlocked)
         {
             gateAudio.Play();
-            StartCoroutine(bridge.GetRequest("open"));
+            StartCoroutine(bridge.GetRequest("CW"));
         }
         else if(GameManager.gateUnlocked)
         {
+            if (GameManager.bypassDialogue)
+            {
+                GameManager.isQuizEnabled = true;
+            }
+            else
+            {
+                GameManager.isQuizEnabled = false;
+            }
             QuizManager2.obstaclesRequested = 113;
-            GameManager.isQuizEnabled = true;
+            GameManager.dialogueToShow[0] = 1;
+            GameManager.dialogueToShow[1] = 2;
+            GameManager.quizRange[0] = 12;
+            GameManager.quizRange[1] = 16;
             SceneManager.LoadScene(2);
         }
     }
 
     public void closeBridge()
     {
-        StartCoroutine(bridge.GetRequest("close"));
+        StartCoroutine(bridge.GetRequest("CCW"));
     }
 
     public void unlockRobot()
@@ -65,8 +90,19 @@ public class ObstaclesController : MonoBehaviour
         }
         else if(GameManager.bridgeUnlocked && GameManager.gateUnlocked)
         {
+            if (GameManager.bypassDialogue)
+            {
+                GameManager.isQuizEnabled = true;
+            }
+            else
+            {
+                GameManager.isQuizEnabled = false;
+            }
             QuizManager2.obstaclesRequested = 112;
-            GameManager.isQuizEnabled = true;
+            GameManager.dialogueToShow[0] = 3;
+            GameManager.dialogueToShow[1] = 5;
+            GameManager.quizRange[0] = 27;
+            GameManager.quizRange[1] = 32;
             SceneManager.LoadScene(2);
         }
     }

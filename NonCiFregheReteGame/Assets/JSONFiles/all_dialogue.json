@@ -3,39 +3,63 @@
         {
             "title": "Fake news",
             "paragraphs": [
-                "Le fake news sono notizie false a scopo intenzionale.",
-                "Vengono create per scherzo, per desiderio di fama o per provocazione.",
-                "Chi crea una fake news vuole  ottenere click per essere popolare,",
-                "oppure per provocare o diffamare una persona.",
-                "Quando condividi una notizia falsa,",
-                "sai che puoi perdere credibilità,",
-                "e che puoi mettere a rischio la tua libertà.",
-                "Una volta condivisa la fake sul web,",
-                "non è possibile tornare indietro pubblicando la notizia reale,",
+                "Le fake news sono notizie false con lo scopo di fare disinformazione.",
+                "Quando condividi una notizia falsa, sai che puoi perdere credibilità, e che puoi mettere a rischio la tua libertà.",
+                "Una volta condivisa la fake sul web, non è possibile tornare indietro pubblicando la notizia reale,",
                 "perché l’informazione falsa circolerà di più rispetto alla sua correzione.",
-                "Per far sembrare vera una notizia falsa,",
-                "la si crea utilizzando nomi di siti già presenti,",
-                "mettendo immagini presenti in notizie reali che inducono alla condivisione della notizia",
-                "Per capire se ci troviamo di fronte a una fake news  bisogna far riferimento alle 5W:",
-                "Who(Chi), Where(Dove), When(Quando), Why(Perchè), How(Come)",
-                "Bisogna stare attenti a dei semplici accorgimenti:",
-                "La data di pubblicazione, può essere che una notizia sia stata pubblicata in passato,",
-                "raramente ci sono nomi propri di persona,",
-                "il titolo è scritto in maiuscolo e con punti esclamativi,",
-                "ci sono errori di battitura o di punteggiatura.",
-                "Ciò significa che la notizia potrebbe avere una fonte equivoca,",
-                "le fonti equivoche cercano di duplicare una notizia reale, ma falsa.",
-                "Le immagini  o i  video  nelle fake news spesso sono modificati,",
-                "oppure possono essere immagini reali ma fuori dal contesto della notizia.",
-                "Esiste un’azienda bulgara per la  gestione di siti falsi chiamata Edinet.",
-                "Nelle fake si casca per:",
-                "Ignoranza che porta far credere alle notizie,",
-                "perchè si legge con fretta il titolo,",
-                "per la somiglianza a ciò che pensiamo.",
-                "Spesso, tendiamo a considerare vere delle notizie che affermano di pensarla come noi.",
-                "Può capitare, anche, che si pensi che una notizia è vera solo perchè popolare.",
-                "Questo fenomeno si chiama 'processo virale', quando una notizia diventa famosa,",
-                "Ma ciò non significa che sia vera."
+                "Per capire se ci troviamo di fronte a una fake news bisogna far riferimento alle 5W: Who(Chi), Where(Dove), When(Quando), Why(Perchè), How(Come)",
+                "Bisogna stare attenti ad alcuni dettagli: la data di pubblicazione, errori di battitura o di punteggiatura e l'assenza di nomi propri di persona.",
+                "Le immagini o i video nelle fake news spesso sono modificati, oppure possono essere immagini reali ma fuori dal contesto della notizia.",
+                "Nelle fake si casca per: ignoranza che porta far credere alle notizie, perchè si legge con fretta il titolo e per la somiglianza a ciò che pensiamo.",
+                "Spesso, tendiamo a considerare vere delle notizie che affermano di pensarla come noi oppure perchè popolare.",
+                "Nell'ultimo caso questo fenomeno si chiama 'processo virale'."
+            ]
+        },
+        {
+            "title": "Comunicazione e Linguaggio d'odio",
+            "paragraphs": [
+                "Il discorso d’odio consiste nell’invito a odiare una persona o un gruppo di persone; ad esempio include  insulti verso queste persone.",
+                "Chi usa un linguaggio d’odio verso qualcuno, cerca delle giustificazioni",
+                "ad esempio, spinge a odiare una persona per il paese da cui da cui  proviene, per le sue idee, per  l’età e altro ancora....qualsiasi cosa può diventare una giustificazione",
+                "E’ importante ricordare che l’odio verso qualcuno non è mai giustificato."
+            ]
+        },
+        {
+            "title": "Chat Gaming",
+            "paragraphs": [
+                "Il gioco è importante nello sviluppo di una persona. Può causare una migliore rapidità della vista, ma anche problemi del sonno.",
+                "Giocare ad alcuni videogiochi può causare dei peggioramenti graduali nel carattere",
+                "Ad esempio, dalla rabbia, un ragazzo può passare agli insulti e poi alle minacce. Se un ragazzo è già nervoso o aggressivo, peggiorerà queste sue carattristiche",
+                "Un altro problema nato è quello della dipendenza:",
+                "Non si tratta del semplice piacere che si prova a giocare",
+                "Ma rappresenta una vera e propria malattia che non ti fa staccare dal video anche er ore, non ti fa pensare ad altro.... e spesso può portare a problemi mentali e fisici.",
+                "Ad esempio, voresti aumentare sempre di più le ore di gioco, peni che il gioco sia l’unica fonte di felicità, ti incontri con sempre meno persone al di fuori del gioco,",
+                "A livello fisico, tendi a lavarti poco e non ti interessa più essere in ordine, ingrassi o diminuisci in fretta, gli occhi si seccano facilmente e hai problemi alla vista, non riesci a dormire..."
+            ]
+        },
+        {
+            "title": "Bullismo",
+            "paragraphs": [
+                "Il bullismo è quando una persona (BULLO) prova piacere nel tormentare i più deboli (VITTIMA).",
+                "Gli atti di bullismo spesso risultano AGGRESSIVI e RIPETUTI, verso chi non è in grado di difendersi.",
+                "Il bullismo può suddividersi in due categorie:",
+                "Diretto cioè attacchi di tipo fisico, come spintoni, sgambetti ecc. oppure di tipo verbale come degli insulti verso la vittima.",
+                "Indiretto: la vittima viene isolata dal gruppo diffondendo pettegolezzi su di essa.",
+                "Esistono vari tipi di bullismo:",
+                "Fisico: colpisce la vittima a livello del corpo, in maniera aggressiva;",
+                "Psicologico: colpisce a livello mentale, ad esempio, colpendo i punti deboli della vittima, dove si sente più fragile e insicura",
+                "(es.sei un ciccione, fai schifo a giocare a calcio)",
+                "Attori principali del bullismo: il bullo e i suoi complici, la vittima, il pubblico che non interviene",
+                "Conseguenze: la vittima potrebbe avere, incubi e attacchi d’ansia, arrivando ad avere insicurezze e disturbi psicologici, come la depressione."
+            ]
+        },
+        {
+            "title": "Cyberbullismo",
+            "paragraphs": [
+                "Il cyberbullismo consiste nel far girare in rete foto e video, oppure messaggi e post contenenti materiale offensivo.",
+                "LE CONSEGUENZE DEL CYBERBULLISMO: si manifestano nella vita reale delle vittime e sono analoghe a quelle che si manifestano col bullismo.",
+                "COME PREVENIRE IL BULLISMO: bisogna diffondere informazioni riguardo a questo tema, rendendo consapevoli le persone della gravità di questi comportamenti, anche nei confronti della legge; ",
+                "Nel caso tu fossi vittima di attacchi di bullismo, fatti aiutare da un adulto competente: i tuoi genitori, la maestra o il maestro, tuo fratello più grande, il tuo allenatore....."
             ]
         },
         {
@@ -43,128 +67,8 @@
             "paragraphs": [
                 "OVERSHARING E SHARENTING:",
                 "L’oversharing è la condivisione eccessiva di contenuti di qualsiasi tipo, ad esempio foto dei nostri pasti o persino di come stiamo.",
-                "All’oversharing si collega anche lo “Sharenting”, ovvero la condivisione di foto/video dei propri figli online.",
-                "SEXTING :",
-                "Il “sexting” è “lo scambio di messaggi, immagini e/o video a sfondo sessuale” o più comunemente definito come “creare, condividere e inoltrare immagini di nudo/semi-nudo”.",
-                "Spesso i ragazzi praticano il sexting per scoprire la propria sessualità, aumentare la propria autostima, farsi notare o per conoscere persone nuove; ",
-                "Purtroppo  c’è la possibilità che vengano inviate immagini intime a seguito di una richiesta  da parte di un’altra persona.",
-                "Appena inviamo una nostra foto a qualcuno, non ne abbiamo più il controllo, né di spazio né di tempo ",
-                "Inviare foto intime al proprio ragazzo/a non è reato, sempre se nell’età del consenso sessuale (dai 14 anni in su) e se inviate di propria volontà (quindi senza essere costretti, minacciati e senza che venga proposto del denaro in cambio di quelle immagini).",
-                "Invece, se il proprio/a ragazzo/a, decide di condividere le vostre foto o video, può commettere un reato…",
-                "REVENGE PORN:",
-                "Il revenge porn è l’atto in cui video e/o foto sessuali vengono inviate a persone esterne alla chat in cui quelle foto/video sono stati inviati",
-                "è una sorta di vendetta a seguito della fine di una relazione o di un tradimento, attuato da chi ha sofferto per la fine della relazione/chi è stato tradito, verso chi ha posto fine alla relazione o che lo/la ha tradito/a",
-                "1 persona su 4 ha chiesto aiuto ad un professionista della salute mentale per superare le conseguenze di questo abuso, ma rimane comunque il fatto che una buona parte di queste vittime rimane in silenzio, preda dei sensi di colpa, dell’imbarazzo e della vergogna.",
-                "SEXTORTION :",
-                "Il sextortion è la minaccia di condividere con terze persone foto/video sessuali della vittima, se non viene fatto ciò che viene richiesto.",
-                "Le caratteristiche del sextortion sono 2: un rapporto di fiducia tra vittima e abusante, e il ricatto che ne consegue.",
-                "Il sextortion può verificarsi tramite: app di dating, conversazioni telefoniche, piattaforme di giochi online, e-mail, altri siti o in generale dei social network.",
-                "Offline, il sextortion può avvenire alla conclusione di una relazione per cercare di riconciliarsi forzatamente.",
-                "Online alla vittima vengono chieste delle foto/video sessuali da una persona di cui si fida che poi userà quelle stesse foto/video per ricattare la vittima."
-            ]
-        },
-        {
-            "title": "Comunicazione e Linguaggio d'odio",
-            "paragraphs": [
-                "Il discorso d’odio consiste,nell’invito all’odio di  una persona o un gruppo di persone;",
-                " ad esempio include  insulti verso queste persone.",
-                "Chi usa un linguaggio d’odio verso qualcuno, usa giustificazioni.",
-                "le giustificazioni sono ad esempio espressioni basate sul posto da cui si proviene, le idee, l’età e altro ancora.",
-                "E’ importante ricordare che l’odio verso qualcuno non è mai giustificato.",
-                "I comportamenti che una persona può assumere durante una discussione, sono regolati da una piramide.",
-                "Questi comportamenti vanno  dal peggiore al migliore:",
-                "1)Insultare: Consiste nella forma più diffusa di reazione a un disaccordo.",
-                "2) Ad Hominem: Consiste nell’attacco della persona che sostiene un’idea, non della tesi stessa;",
-                "3) Criticare il tono: Consiste nel disapprovare il tono dell’autore;",
-                "4) Contraddire: Consiste nel contrastare la tesi dell’autore, con un’idea senza fondamenti;",
-                "5) Controargomentare: Consiste andare contro la parola dell’autore, con idee o prove",
-                "6)Confutare: Consiste nel trovare nel discorso dell’autore passaggi precisi,per dimostrare che questi, sono errati;",
-                "7)Confutare il nodo centrale: Consiste nel saper dimostrare e spiegare i motivi di un certo argomento;"
-            ]
-        },
-        {
-            "title": "Chat Gaming",
-            "paragraphs": [
-                "Esistono molti tipi di Videogiochi:",
-                "Role Playing Game(RPG): Gioco di ruolo online dove ci sono poche persone che giocare insieme",
-                "MMORPG(Massive Multiplayer Online Role Playing Game): Multigiocatore di massa,",
-                "dove giocano insieme migliaia di giocatori.",
-                "MOBA(Multiplayer Online Battle Arena): I giocatori giocano in un’arena.",
-                "Battle Royale: Multigiocatore che si basa sull’ambiente e la sopravvivenza.",
-                "RTS(Real Time Strategy): Gioco strategico in tempo reale.",
-                "Shooter, o “sparatutto”, gioco in cui l’azione principale è quella di sparare.",
-                "Il gioco è importante nello sviluppo del carattere di una persona.",
-                "I bambini che utilizzano videogiochi sviluppano:",
-                "Migliore rapidità della vista e problemi del sonno.",
-                "Oltre ad essere divertente,",
-                "si è notato che, giocare dei videogiochi con contenuti aggressivi,",
-                "possono causare delle differenze nel carattere,",
-                "spesso anche aggressive.",
-                "Ad esempio, un ragazzo educato difficilmente per uno scatto di rabbia ammazza qualcuno.",
-                "E’ più probabile che un ragazzo inizi ad avere prima delle reazioni negative.",
-                "Il problema non si limita alla violenza,",
-                "ma alla quantità in cui la si utilizza.",
-                "Un altro problema nato è quello della dipendenza:",
-                "A differenza del semplice piacere e amare nei confronti del gioco,",
-                "rappresenta una vera e propria malattia,",
-                "e spesso può portare a problemi mentali e fisici.",
-                "Dei sintomi che si possono notare a livello mentale sono:",
-                "Voler sempre di più aumentare le ore di gioco,",
-                "pensare che il gioco sia l’unica fonte di felicità",
-                "diminuire le relazioni al di fuori del gioco,",
-                "se si pone la vita del gioco davanti a quella scolastica o lavorativa.",
-                "Alcuni problemi a livello fisico sono:",
-                "Poca cura del proprio igiene,",
-                "difficoltà a gestire il proprio peso,",
-                "occhi che si seccano facilmente,",
-                "problemi alla vista,",
-                "insonnia.",
-                "Una cosa positiva è che,",
-                "grazie ai videogiochi, molti ‘consumer’ diventano ‘prosumer’,",
-                "ciò significa che si ha interesse nella vendita di ciò che si usa."
-            ]
-        },
-        {
-            "title": "Bullismo",
-            "paragraphs": [
-                "E’ un comportamento che una persona assume in modo volontario.",
-                "Il bullismo è quando  una persona ne affronta un’altra.",
-                "Gli atti di bullismo  spesso risultano AGGRESSIVI e RIPETUTI, verso chi non è in grado di difendersi.",
-                "Il Bullismo può suddividersi in due categorie:",
-                "-Bullismo diretto cioè il comportamento che comprende attacchi di tipo fisico,come spintoni,oppure di tipo verbale come degli insulti verso la vittima.",
-                "-Bullismo indiretto: E’ un comportamento che isola la vittima dal gruppo diffondendo pettegolezzi su di essa.",
-                "Esistono  vari tipi di bullismo:",
-                "-BULLISMO FISICO: E’ un tipo di bullismo che colpisce la vittima a livello fisico e verbale in maniera aggressiva;",
-                "-BULLISMO PSICOLOGICO: E’ un tipo di bullismo  che colpisce a livello psicologico, ad esempio, colpendo i punti deboli della vittima;",
-                "-BULLISMO PER DIVERSITA’: Il bullismo verso il diverso, che si distingue in 4 categorie diverse:",
-                "diversità fisica-> Le vittime a causa di caratteristiche fisiche o disabilità, vengono definite diverse;",
-                "diversità religiosa-> Le vittime sono discriminate perché praticano una religione diversa da quella del bullo;",
-                "diversità etnica-> Le vittime provenienti da paesi diversi da quello del bullo sono prese di mira;",
-                "diversità per orientamento sessuale-> Le vittime che possiedono un orientamento sessuale non etero, sono prese di mira;",
-                "Attori principali del bullismo: ",
-                "IL BULLO: che è una persona aggressiva che prova piacere nel tormentare i più deboli, per sentirsi superiore agli altri;",
-                "LA VITTIMA: che è una persona che vive nella paura di essere presa in giro e per paura non chiede aiuto a  nessuno , non riuscendo ad aprirsi;",
-                "COMPLICI DEL BULLO:sono coloro che obbediscono al bullo, che lo difendono in qualunque modo, diventando la sua spalla;",
-                "IL PUBBLICO:che sono persone attive, che difendono la vittima e le persone passive, che non intervengono per paura di diventare vittime;",
-                "CONSEGUENZE DEL BULLISMO: il bullismo può portare gravi problemi, sia a livello psicologico che fisico alla vittima.",
-                "La vittima potrebbe, manifestare mal di pancia, mal di testa, incubi e attacchi d’ansia, arrivando ad avere  insicurezze e disturbi psicologici, come la depressione."
-
-            ]
-        },
-        {
-            "title": "Cyberbullismo",
-            "paragraphs": [
-                "Si tratta di un tipo di attacco offensivo, che avviene su internet.",
-                "Il cyberbullismo consiste nel far girare foto e video, oppure messaggi e post contenenti, materiale offensivo.",
-                "CONSEGUENZE DEL CYBERBULLISMO:",
-                "Le conseguenze del cyberbullismo, si manifestano nella vita reale delle vittime e sono analoghe a quelle che si manifestano alle vittime di bullismo.",
-                "In casi estremi le vittime di cyberbullismo potrebbero decidere di togliersi la vita.",
-                "COME PREVENIRE IL BULLISMO:",
-                "E’ importante diffondere informazioni riguardo a questo tema, rendendo consapevoli le persone sulla gravità del bullismo; ",
-                "E’ importante immedesimarsi nei panni degli altri. ",
-                "Nel caso tu fossi vittima di attacchi di bullismo, è importante farsi aiutare da un adulto competente."
+                "All’oversharing si collega anche lo “Sharenting”, ovvero la condivisione di foto/video dei propri figli online."
             ]
         }
     ]
-
 }

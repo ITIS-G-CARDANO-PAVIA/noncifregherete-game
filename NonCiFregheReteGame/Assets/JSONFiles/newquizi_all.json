@@ -1,0 +1,261 @@
+{
+	"quiz": [
+		{
+			"toAsk": "Il gioco è importante per i bambini?",
+			"trueResponse": "Si",
+			"falseResponse": [
+				"No",
+				"No, perchè si diventa dipendenti"
+			]
+		},
+		{
+			"toAsk": "Giocando ai videogiochi si può andare incontro a conseguenze gravi per te e chi ti sta intorno?",
+			"trueResponse": "si",
+			"falseResponse": [
+				"no",
+				"dipende da quanto giochi"
+			]
+		},
+		{
+			"toAsk": "I videogiochi possono causare dei problemi? Fisici o mentali?",
+			"trueResponse": "Si, sia fisici che mentali",
+			"falseResponse": [
+				"Si, ma solo fisici",
+				"No, i videogiochi non causano alcun problema"
+			]
+		},
+		{
+			"toAsk": "I problemi del sonno possono essere causati dai videogiochi?",
+			"trueResponse": "Si",
+			"falseResponse": [
+				"No",
+				"Non tutti i videogiochi li causano"
+			]
+		},
+		{
+			"toAsk": "Alcuni dei problemi mentali che si possono riscontrare sono..:",
+			"trueResponse": "Allontanarsi dai propri amici(isolarsi) e voler giocare sempre di più(dipendenza)",
+			"falseResponse": [
+				"Voler giocare sempre di meno(dipendenza) e allontanarsi dai propri amici(isolarsi)",
+				"Nessuna delle risposte è corretta"
+			]
+		},
+		{
+			"toAsk": "Alcuni dei problemi fisici che si possono riscontrare sono..:",
+			"trueResponse": "Poca cura di sé stessi, problemi del sonno, problemi alla vista",
+			"falseResponse": [
+				"Nessuna delle risposte è corretta",
+				"Molta cura di sé stessi e buona vista"
+			]
+		},
+		{
+			"toAsk": "La dipendenza si può definire come:",
+			"trueResponse": "Voler sempre di più qualcosa",
+			"falseResponse": [
+				"Voler sempre di meno qualcosa",
+				"Nessuna delle risposte è corretta"
+			]
+		},
+		{
+			"toAsk": "Il gioco influisce sul carattere?",
+			"trueResponse": "Si",
+			"falseResponse": [
+				"No",
+				"No, solo sul fisico"
+			]
+		},
+		{
+			"toAsk": "Giocando ai videogiochi potresti subire episodi di cyberbullismo?",
+			"trueResponse": "si",
+			"falseResponse": [
+				"no",
+				"dipende dai videogiochi"
+			]
+		},
+		{
+			"toAsk": "giocare ai videogiochi comporta sempre gravi danni alla mente?",
+			"trueResponse": "falso",
+			"falseResponse": [
+				"vero",
+				"non saprei"
+			]
+		},
+		{
+			"toAsk": "Quando si va incontro ad una dipendenza?",
+			"trueResponse": "entrambe le risposte sono esatte",
+			"falseResponse": [
+				"quando i rendimenti nelle altre attività calano",
+				"quando si gioca troppo e si è scontrosi con chi si ha intorno"
+			]
+		},
+		{
+			"toAsk": "L’odio può essere giustificato?",
+			"trueResponse": "no",
+			"falseResponse": [
+				"si",
+				"solo in alcuni casi"
+			]
+		},
+		{
+			"toAsk": "È più grave controargomentare o criticare il tono?",
+			"trueResponse": "criticare il tono",
+			"falseResponse": [
+				"controargomentare",
+				"entrambi"
+			]
+		},
+		{
+			"toAsk": "  Cosa faresti se uno sconosciuto si arrabbiasse con te?",
+			"trueResponse": "cercherei di calmare lo sconosciuto",
+			"falseResponse": [
+				"  mi arrabbierei anch’io e lo insulterei",
+				"scapperei per la paura"
+			]
+		},
+		{
+			"toAsk": " Qual è il significato dell’espressione “ad hominem”?",
+			"trueResponse": " attaccare la persona che propone la tesi e non la tesi stessa",
+			"falseResponse": [
+				"insultare in modo pesante",
+				"picchiare"
+			]
+		},
+		{
+			"toAsk": " Completa la frase:……………… è contraddizione più ragionamento e/o prova ",
+			"trueResponse": "Controargomentare",
+			"falseResponse": [
+				"confutare",
+				"insultare"
+			]
+		},
+		{
+			"toAsk": "Le fake news sono intenzionali?",
+			"trueResponse": "Si",
+			"falseResponse": [
+				"No",
+				"Sono casuali"
+			]
+		},
+		{
+			"toAsk": "Si creano le fake news per..:",
+			"trueResponse": "Pubblicità",
+			"falseResponse": [
+				"Per conoscere persone nuove",
+				"Nessuna delle risposte è corretta"
+			]
+		},
+		{
+			"toAsk": "Quali sono gli obiettivi di chi crea le fake news?",
+			"trueResponse": "Ricavare un profitto",
+			"falseResponse": [
+				"Nessuna delle risposte è corretta",
+				"Fare amicizia"
+			]
+		},
+		{
+			"toAsk": "Pubblicare delle fake news comporta prendersi delle responsabilità?",
+			"trueResponse": "Si",
+			"falseResponse": [
+				"No, ognuno è libero di condividere ciò che vuole",
+				"No, perchè ogni contenuto pubblicato online può essere eliminato"
+			]
+		},
+		{
+			"toAsk": "Cosa sono le ‘fonti equivoche’?",
+			"trueResponse": "Le fonti che cercano di duplicare una fonte reale",
+			"falseResponse": [
+				"Sono delle copie delle fonti reali per evitare attacchi alla rete",
+				"Le fonti che si creano allo scopo di guadagnare"
+			]
+		},
+		{
+			"toAsk": "Come funziona il ‘processo virale’?",
+			"trueResponse": "Una catena di condivisioni che portano la notizia ad ottenere una certa fama",
+			"falseResponse": [
+				"E’ quando una notizia riceve un insieme di segnalazione",
+				"Un processo legale in cui quelli che hanno condiviso la fake news vengono chiamati"
+			]
+		},
+		{
+			"toAsk": "Come avviene una reazione emotiva?",
+			"trueResponse": "Avviene quando una o più parti della notizia causano emozioni forti come gioia o rabbia",
+			"falseResponse": [
+				"Avviene se un lettore o l'ascoltatore trova particolarmente noiosa una notizia",
+				"Avviene quando la notizia causa delle emozioni forti e il lettore non la condivide"
+			]
+		},
+		{
+			"toAsk": "Come viene diffusa una fake news sui social?",
+			"trueResponse": "Una notizia viene diffusa grazie agli ‘elementi di invio’",
+			"falseResponse": [
+				"Una notizia viene diffusa unicamente grazie a i telegiornali",
+				"Nessuna delle risposte è corretta"
+			]
+		},
+		{
+			"toAsk": "Cosa può aiutarci a scoprire se una notizia è una fake news?",
+			"trueResponse": "Who, Where, When, Why, How",
+			"falseResponse": [
+				"Who, Where, When, What",
+				"Nessuna delle risposte è corretta."
+			]
+		},
+		{
+			"toAsk": "Quali sono le leve a cui si fa forza per far sì che la gente credi alle fake news?",
+			"trueResponse": "L’ignoranza: Conoscere poco un determinato argomento",
+			"falseResponse": [
+				"La falsità: Il rendere ovvio che una notizia è falsa",
+				"Nessuna delle risposte è corretta"
+			]
+		},
+		{
+			"toAsk": "Quali tipi di aggressione possono avvenire?",
+			"trueResponse": "Entrambe",
+			"falseResponse": [
+				"Fisica",
+				"Verbale"
+			]
+		},
+		{
+			"toAsk": "Qual è il termine con cui viene definito il bullismo tramite internet?",
+			"trueResponse": "Cyberbullismo",
+			"falseResponse": [
+				"Webbulismo",
+				"Cyberviolenza"
+			]
+		},
+		{
+			"toAsk": "Se subisci un attacco da parte di un bullo, qual è la cosa migliore da fare?",
+			"trueResponse": "Chiedo aiuto ad un adulto (genitori, insegnanti, allenatori…)",
+			"falseResponse": [
+				"Mi vendico, assieme ai miei compagni attacco il bullo",
+				"Nulla, non voglio avere ulteriori problemi"
+			]
+		},
+		{
+			"toAsk": "Se assisti ad un atto di bullismo nei confronti di un tuo compagno o amico cosa è meglio fare?",
+			"trueResponse": "chiedo aiuto ad un adulto di competenza",
+			"falseResponse": [
+				"provo a fermare il bullo con la forza",
+				" nulla, meglio non rischiare di essere coinvolti"
+			]
+		},
+		{
+			"toAsk": "Cos'è l’oversharing?",
+			"trueResponse": "E’ la condivisione eccessiva di contenuti di qualsiasi tipo",
+			"falseResponse": [
+				"E’ l’uso eccessivo dei social",
+				"E’ postare troppe foto sui social"
+			]
+		},
+		{
+			"toAsk": "Cos'è lo sharenting?",
+			"trueResponse": "E’ la condivisione di foto/video dei propri figli online",
+			"falseResponse": [
+				"E’ l’uso dei social da parte dei genitori",
+				"E’ l’oversharing praticato dai genitori"
+			]
+		}
+	]
+}
+

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class QuizManager2 : MonoBehaviour
 {
     [SerializeField]
-    private int minForPad = 2;
+    private int minForPad = 4;
 
     public static bool toReactivate = false;
     public TextAsset quizJSON;
@@ -36,13 +36,13 @@ public class QuizManager2 : MonoBehaviour
         showQuiz();
     }
 
-    int indexToAsk()
+    int indexToAsk(int[] range)
     {
 
         int rdm;
         do
         {
-            rdm = Random.Range(0, quiz.Length);
+            rdm = Random.Range(range[0], range[1]);
         } while (alreadyAsked.Contains(rdm));
         alreadyAsked.Add(rdm);
         return rdm;
@@ -51,7 +51,7 @@ public class QuizManager2 : MonoBehaviour
     void showQuiz()
     {
         robotAnimator.Play("ATTENDERE");
-        JSONManager.Quiz currentQuiz = quiz[indexToAsk()];
+        JSONManager.Quiz currentQuiz = quiz[indexToAsk(GameManager.quizRange)];
         question.text = currentQuiz.toAsk;
         List<string> answers = new List<string>();
         answers.AddRange(currentQuiz.falseResponse);
