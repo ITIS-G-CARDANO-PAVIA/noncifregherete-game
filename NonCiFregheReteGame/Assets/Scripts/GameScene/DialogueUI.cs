@@ -1,22 +1,41 @@
 ﻿using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueUI : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private TextAsset textAsset;
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource popAudio0;
+    [SerializeField] private AudioSource popAudio1;
+    [SerializeField] private AudioSource popAudio2;
 
     private TypeWriterEffect typeWriterEffect;
+
+
+    private void playRand()
+    {
+        int rnd = Random.Range(1, 4);
+        Debug.Log(rnd);
+        switch (rnd)
+        {
+            case 1:
+                popAudio0.Play();break;
+            case 2:
+                popAudio1.Play();break;
+            case 3:
+                popAudio2.Play();break;
+        }
+    }
 
     private void Start()
     {
         typeWriterEffect = GetComponent<TypeWriterEffect>();
         JSONManager jm = new JSONManager();
         JSONManager.ListDialoghi dialoghi = jm.readDialogs(textAsset);
-        audioSource.Play();
+        playRand();
         ShowDialogue(dialoghi.dialogo);
     }
     
@@ -29,6 +48,17 @@ public class DialogueUI : MonoBehaviour
 
     private IEnumerator StepThroughDialogue(JSONManager.Dialogo[] dialogue)
     {
+        if (!GameManager.enabledArgs[0])
+        {
+            if(GameManager.dialogueToShow[0] == 0)
+            {
+                if(GameManager.dialogueToShow[1] == 1)
+                {
+                    SceneManager.LoadScene(4);
+                }
+            }
+        }
+
         for (int i = GameManager.dialogueToShow[0]; i < GameManager.dialogueToShow[1]; i++)
         {
             SetStatusDialogueBox(true);
@@ -39,7 +69,7 @@ public class DialogueUI : MonoBehaviour
                 yield return typeWriterEffect.Run(text, textLabel);
                 //yield return new WaitUntil(() => (Input.touchCount > 0));
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space) || (Input.touchCount > 0));
-                audioSource.Play();
+                playRand();
             }
             SetStatusDialogueBox(false);
             

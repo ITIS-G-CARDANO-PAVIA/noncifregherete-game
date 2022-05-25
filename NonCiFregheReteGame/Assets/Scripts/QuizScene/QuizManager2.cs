@@ -103,6 +103,7 @@ public class QuizManager2 : MonoBehaviour
                     }
                 case 113:
                     {
+                        Debug.Log("enable");
                         GameManager.bridgeUnlocked = true;
                         break;
                     }

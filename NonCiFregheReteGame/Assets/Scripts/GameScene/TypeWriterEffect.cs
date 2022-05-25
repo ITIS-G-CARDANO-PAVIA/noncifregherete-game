@@ -7,6 +7,8 @@ public class TypeWriterEffect : MonoBehaviour
 {
     [SerializeField] private float typeWriterSpeed = 50f;
 
+    [SerializeField] private AudioSource writingSound;
+
     public Coroutine Run(string textToType, TMP_Text textLabel)
     {
         return StartCoroutine(TypeText(textToType, textLabel));
@@ -16,7 +18,7 @@ public class TypeWriterEffect : MonoBehaviour
     {
         float t = 0;
         int charIndex = 0;
-
+        writingSound.PlayDelayed(0.2f);
         while (charIndex < textToType.Length)
         {
             t += Time.deltaTime * typeWriterSpeed;
@@ -29,5 +31,6 @@ public class TypeWriterEffect : MonoBehaviour
         }
 
         textLabel.text = textToType;
+        writingSound.Stop();
     }
 }

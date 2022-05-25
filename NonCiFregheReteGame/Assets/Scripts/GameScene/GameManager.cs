@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+    private Animator robotAnimator;
 
     [SerializeField]
     private GameObject dialogueUI;
@@ -14,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     
     //Quiz flag
-    public static bool isQuizEnabled = true;
+    public static bool isQuizEnabled = false;
 
     //Bypass dialogue
     public static bool bypassDialogue = false;
@@ -26,7 +28,10 @@ public class GameManager : MonoBehaviour
 
     //Dialogue to show index and quiz range
     public static int[] dialogueToShow = {0, 1};
-    public static int[] quizRange = {21, 30};
+    public static int[] quizRange = {17, 26};
+
+    //Enabled Arguments
+    public static bool[] enabledArgs = { true, true, true, true };
 
     void checkQuiz()
     {
@@ -35,11 +40,13 @@ public class GameManager : MonoBehaviour
         {
             quizUI.SetActive(false);
             dialogueUI.SetActive(true);
+            robotAnimator.SetInteger("NoTalk", -1);
         }
         else
         {
             quizUI.SetActive(true);
             dialogueUI.SetActive(false);
+            robotAnimator.SetInteger("NoTalk", 0);
         }
     }
 

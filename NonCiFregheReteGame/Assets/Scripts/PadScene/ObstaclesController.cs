@@ -5,9 +5,11 @@ public class ObstaclesController : MonoBehaviour
 {
     public AudioSource win;
     public AudioSource gateAudio;
-    
-    Network bridge = new Network("192.168.0.112");
-    Network gate = new Network("192.168.0.111");
+
+    //Network bridge = new Network("192.168.0.112");
+    //Network gate = new Network("192.168.0.111");
+    Network gate = new Network("192.168.0.112");
+    Network bridge = new Network("192.168.0.111");
     Network jammer = new Network("192.168.0.113");
     Network robot = new Network(mainMenuScript.ipAddressRobot);
 
@@ -26,22 +28,30 @@ public class ObstaclesController : MonoBehaviour
         else
         {
 
-            if (GameManager.bypassDialogue)
-            {
-                GameManager.isQuizEnabled = true;
-                Debug.Log("Porca putena");
-            }
-            else
-            {
-                GameManager.isQuizEnabled = false;
-            }
-
             QuizManager2.obstaclesRequested = 111;
             GameManager.dialogueToShow[0] = 2;
             GameManager.dialogueToShow[1] = 3;
             GameManager.quizRange[0] = 0;
             GameManager.quizRange[1] = 11;
-            SceneManager.LoadScene(2);
+
+            if (GameManager.enabledArgs[1])
+            {
+                if (GameManager.bypassDialogue)
+                {
+                    GameManager.isQuizEnabled = true;
+                    SceneManager.LoadScene(2);
+                }
+                else
+                {
+                    GameManager.isQuizEnabled = false;
+                    SceneManager.LoadScene(2);
+                }
+            }
+            else
+            {
+                GameManager.gateUnlocked = true;
+                Debug.Log("gate unlocked");
+            }
         }
     }
 
@@ -59,20 +69,31 @@ public class ObstaclesController : MonoBehaviour
         }
         else if(GameManager.gateUnlocked)
         {
-            if (GameManager.bypassDialogue)
-            {
-                GameManager.isQuizEnabled = true;
-            }
-            else
-            {
-                GameManager.isQuizEnabled = false;
-            }
+
             QuizManager2.obstaclesRequested = 113;
             GameManager.dialogueToShow[0] = 1;
             GameManager.dialogueToShow[1] = 2;
             GameManager.quizRange[0] = 12;
             GameManager.quizRange[1] = 16;
-            SceneManager.LoadScene(2);
+
+            if (GameManager.enabledArgs[2])
+            {
+                if (GameManager.bypassDialogue)
+                {
+                    GameManager.isQuizEnabled = true;
+                    SceneManager.LoadScene(2);
+                }
+                else
+                {
+                    GameManager.isQuizEnabled = false;
+                    SceneManager.LoadScene(2);
+                }
+            }
+            else
+            {
+                GameManager.bridgeUnlocked = true;
+                Debug.Log("bridge unlocked");
+            }
         }
     }
 
@@ -85,25 +106,37 @@ public class ObstaclesController : MonoBehaviour
     {
         if (GameManager.robotUnlocked && GameManager.bridgeUnlocked && GameManager.gateUnlocked)
         {
+            Debug.Log("Hai vinto!");
             win.Play();
             StartCoroutine(robot.GetRequest("State", "Sbloccato"));
         }
         else if(GameManager.bridgeUnlocked && GameManager.gateUnlocked)
         {
-            if (GameManager.bypassDialogue)
-            {
-                GameManager.isQuizEnabled = true;
-            }
-            else
-            {
-                GameManager.isQuizEnabled = false;
-            }
+
             QuizManager2.obstaclesRequested = 112;
             GameManager.dialogueToShow[0] = 3;
             GameManager.dialogueToShow[1] = 5;
             GameManager.quizRange[0] = 27;
             GameManager.quizRange[1] = 32;
-            SceneManager.LoadScene(2);
+
+            if (GameManager.enabledArgs[3])
+            {
+                if (GameManager.bypassDialogue)
+                {
+                    GameManager.isQuizEnabled = true;
+                    SceneManager.LoadScene(2);
+                }
+                else
+                {
+                    GameManager.isQuizEnabled = false;
+                    SceneManager.LoadScene(2);
+                }
+            }
+            else
+            {
+                GameManager.robotUnlocked = true;
+                Debug.Log("robot unlocked");
+            }
         }
     }
 
