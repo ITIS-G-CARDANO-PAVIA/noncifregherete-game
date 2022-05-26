@@ -39,7 +39,7 @@ public class QuizManager2 : MonoBehaviour
     int indexToAsk(int[] range)
     {
 
-        int rdm;
+        int rdm = 0;
         do
         {
             rdm = Random.Range(range[0], range[1]);

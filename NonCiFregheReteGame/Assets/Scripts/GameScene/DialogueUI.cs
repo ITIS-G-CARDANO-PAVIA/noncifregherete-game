@@ -27,6 +27,8 @@ public class DialogueUI : MonoBehaviour
                 popAudio1.Play();break;
             case 3:
                 popAudio2.Play();break;
+            default:
+                Debug.Log("Nothing to do"); break;
         }
     }
 
