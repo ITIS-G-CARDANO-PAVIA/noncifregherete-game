@@ -155,6 +155,11 @@ public class ObstaclesController : MonoBehaviour
         QuizManager2.toReactivate = true;
         SceneManager.LoadScene(0);
     }
+
+    public void goToObstaclesPad()
+    {
+        SceneManager.LoadScene(6);
+    }
     //Sblocco robot StartCoroutine(net.GetRequest("State", "Sbloccato"));
 
 }
