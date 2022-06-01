@@ -79,4 +79,29 @@ public class JoystickHandler : MonoBehaviour, IDragHandler, IPointerDownHandler,
         StartCoroutine(robot.SetCurrentState(Robot.State.F));
     }
 
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            StartCoroutine(robot.SetCurrentState(Robot.State.A));
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            StartCoroutine(robot.SetCurrentState(Robot.State.I));
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            StartCoroutine(robot.SetCurrentState(Robot.State.S));
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            StartCoroutine(robot.SetCurrentState(Robot.State.D));
+        }
+        else if(Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(robot.SetCurrentState(Robot.State.F));
+        }
+    }
+
 }

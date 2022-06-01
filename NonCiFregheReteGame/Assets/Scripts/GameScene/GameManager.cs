@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
     public static bool bridgeUnlocked = false;
     public static bool robotUnlocked = false;
 
+    //Setting state
+    public static bool returnToPad = false;
+
     //Dialogue to show index and quiz range
     public static int[] dialogueToShow = {0, 1};
     public static int[] quizRange = {17, 26};

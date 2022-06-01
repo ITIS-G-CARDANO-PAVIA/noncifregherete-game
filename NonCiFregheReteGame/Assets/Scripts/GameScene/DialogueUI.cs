@@ -34,11 +34,14 @@ public class DialogueUI : MonoBehaviour
 
     private void Start()
     {
-        typeWriterEffect = GetComponent<TypeWriterEffect>();
-        JSONManager jm = new JSONManager();
-        JSONManager.ListDialoghi dialoghi = jm.readDialogs(textAsset);
-        playRand();
-        ShowDialogue(dialoghi.dialogo);
+        if (!GameManager.isQuizEnabled)
+        {
+            typeWriterEffect = GetComponent<TypeWriterEffect>();
+            JSONManager jm = new JSONManager();
+            JSONManager.ListDialoghi dialoghi = jm.readDialogs(textAsset);
+            playRand();
+            ShowDialogue(dialoghi.dialogo);
+        }
     }
     
     public void ShowDialogue(JSONManager.Dialogo[] dialogue)

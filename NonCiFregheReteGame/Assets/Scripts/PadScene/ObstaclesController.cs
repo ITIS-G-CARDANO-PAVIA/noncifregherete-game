@@ -8,8 +8,8 @@ public class ObstaclesController : MonoBehaviour
 
     //Network bridge = new Network("192.168.0.112");
     //Network gate = new Network("192.168.0.111");
-    Network gate = new Network("192.168.0.112");
-    Network bridge = new Network("192.168.0.111");
+    Network gate = new Network("192.168.0.111");
+    Network bridge = new Network("192.168.0.112");
     Network jammer = new Network("192.168.0.113");
     Network robot = new Network(mainMenuScript.ipAddressRobot);
 
@@ -142,9 +142,24 @@ public class ObstaclesController : MonoBehaviour
 
     public void resetTrack()
     {
+        GameManager.bypassDialogue = true;
         GameManager.gateUnlocked = false;
         GameManager.robotUnlocked = false;
         GameManager.bridgeUnlocked = false;
+        closeGate();
+        renableJammer();
+        closeBridge();
+    }
+
+    public void resetTrackYesTheory()
+    {
+        GameManager.gateUnlocked = false;
+        GameManager.robotUnlocked = false;
+        GameManager.bridgeUnlocked = false;
+        GameManager.bypassDialogue = false;
+        GameManager.dialogueToShow[0] = 0;
+        GameManager.dialogueToShow[1] = 1;
+        GameManager.isQuizEnabled = false;
         closeGate();
         renableJammer();
         closeBridge();
@@ -161,5 +176,12 @@ public class ObstaclesController : MonoBehaviour
         SceneManager.LoadScene(6);
     }
     //Sblocco robot StartCoroutine(net.GetRequest("State", "Sbloccato"));
+
+    public void goToOptions()
+    {
+        GameManager.returnToPad = true;
+        Debug.Log(GameManager.returnToPad);
+        SceneManager.LoadScene(3);
+    }
 
 }
