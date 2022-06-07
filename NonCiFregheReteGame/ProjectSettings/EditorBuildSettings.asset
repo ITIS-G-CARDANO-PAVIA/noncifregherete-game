@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PadScene.unity
     guid: ad0090561a5b549eab853f1663c1df98
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/configScene.unity
+    guid: 79041594443a5460f9db3a8d87a3e486
+  - enabled: 1
+    path: Assets/Scenes/ObstaclesControllerScene.unity
+    guid: 6984a980342604c34a37f72928f53fd6
   m_configObjects: {}
