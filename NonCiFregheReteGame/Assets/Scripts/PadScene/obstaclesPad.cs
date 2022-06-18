@@ -54,7 +54,7 @@ public class obstaclesPad : MonoBehaviour
         else if(!int.TryParse(distanza.text, out d) && distanza.text != "")
         {
             distanza.text = "";
-            distanza.placeholder.GetComponent<Text>().text = "Senti troia";
+            distanza.placeholder.GetComponent<Text>().text = "Senti";
         }
         
     }
