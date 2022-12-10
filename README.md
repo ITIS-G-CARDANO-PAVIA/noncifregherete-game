@@ -1,8 +1,6 @@
 # Repository Gioco NonCiFregheRete
 ## Organizzazione Directory
 
-Ciula
-
 | Nome  | Utilizzo  |
 |-------|-----------|
 | GameAssets  | Directory contenente assets per il gioco  |
